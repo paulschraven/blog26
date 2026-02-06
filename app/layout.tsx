@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lora.className}`}>
       <body className="antialiased tracking-tight">
-        <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 bg-zinc-950 text-gray-200">
+        <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 bg-zinc-900 text-gray-200">
           <main className="max-w-[60ch] mx-auto w-full space-y-6">
             {children}
           </main>
