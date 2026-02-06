@@ -39,6 +39,7 @@ export default function RootLayout({
 
 function Footer() {
   const links = [
+    { name: 'email', url: 'mailto:contact@paulschraven.com' },
     { name: 'linkedin', url: 'https://www.linkedin.com/in/paulschraven/' },
     { name: 'github', url: 'https://github.com/paulschraven' }
   ];
