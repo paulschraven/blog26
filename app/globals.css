@@ -92,7 +92,7 @@ ul {
 }
 
 ul li::marker {
-  color: rgb(229 231 235);
+  color: rgb(209 213 219); /* gray-300 */
 }
 
 /* Remove Safari input shadow on mobile */

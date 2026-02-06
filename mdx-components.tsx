@@ -11,33 +11,33 @@ type BlockquoteProps = ComponentPropsWithoutRef<'blockquote'>;
 
 const components = {
   h1: (props: HeadingProps) => (
-    <h1 className="font-semibold pt-12 mb-0 text-gray-200 text-3xl md:text-4xl" {...props} />
+    <h1 className="font-semibold pt-12 mb-0 text-gray-300 text-3xl md:text-4xl" {...props} />
   ),
   h2: (props: HeadingProps) => (
     <h2
-      className="text-gray-200 font-medium mt-8 mb-3"
+      className="text-gray-300 font-medium mt-8 mb-3"
       {...props}
     />
   ),
   h3: (props: HeadingProps) => (
     <h3
-      className="text-gray-200 font-medium mt-8 mb-3"
+      className="text-gray-300 font-medium mt-8 mb-3"
       {...props}
     />
   ),
-  h4: (props: HeadingProps) => <h4 className="font-medium text-gray-200" {...props} />,
+  h4: (props: HeadingProps) => <h4 className="font-medium text-gray-300" {...props} />,
   p: (props: ParagraphProps) => (
-    <p className="text-gray-200 leading-relaxed" {...props} />
+    <p className="text-gray-300 leading-relaxed" {...props} />
   ),
   ol: (props: ListProps) => (
     <ol
-      className="text-gray-200 list-decimal pl-5 space-y-2"
+      className="text-gray-300 list-decimal pl-5 space-y-2"
       {...props}
     />
   ),
   ul: (props: ListProps) => (
     <ul
-      className="text-gray-200 list-square pl-5 space-y-1 marker:text-gray-200"
+      className="text-gray-300 list-square pl-5 space-y-1 marker:text-gray-300"
       {...props}
     />
   ),
@@ -50,7 +50,7 @@ const components = {
   ),
   a: ({ href, children, ...props }: AnchorProps) => {
     const className =
-      'text-gray-200 underline decoration-gray-200 decoration-1 underline-offset-4 hover:no-underline transition-all duration-200';
+      'text-gray-300 underline decoration-gray-300 decoration-1 underline-offset-4 hover:no-underline transition-all duration-200';
     if (href?.startsWith('/')) {
       return (
         <Link href={href} className={className} {...props}>
@@ -103,7 +103,7 @@ const components = {
   ),
   blockquote: (props: BlockquoteProps) => (
     <blockquote
-      className="ml-[0.075em] border-l-3 border-gray-200 pl-4 text-gray-200"
+      className="ml-[0.075em] border-l-3 border-gray-300 pl-4 text-gray-300"
       {...props}
     />
   ),

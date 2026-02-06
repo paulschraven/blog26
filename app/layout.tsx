@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lora.className}`}>
       <body className="antialiased tracking-tight">
-        <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 bg-zinc-900 text-gray-200">
+        <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 bg-zinc-900 text-gray-300">
           <main className="max-w-[60ch] mx-auto w-full space-y-6">
             {children}
           </main>
@@ -53,7 +53,7 @@ function Footer() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-200 underline decoration-gray-200 decoration-1 underline-offset-4 hover:no-underline transition-all duration-200"
+            className="text-gray-300 underline decoration-gray-300 decoration-1 underline-offset-4 hover:no-underline transition-all duration-200"
           >
             {link.name}
           </a>
