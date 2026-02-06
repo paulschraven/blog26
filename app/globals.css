@@ -84,6 +84,13 @@ hr {
   border-color: #333333;
 }
 
+/* Force square bullets to be visible (Tailwind preflight sets list-style: none) */
+ul {
+  list-style-type: square !important;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+
 ul li::marker {
   color: rgb(229 231 235);
 }
