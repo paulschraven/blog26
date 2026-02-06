@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-family-sans: 'Inter', sans-serif;
+  --font-family-serif: 'Lora', serif;
 }
 
 :root {
@@ -54,7 +54,8 @@ code {
   font-size: 14px;
   padding: 0.2em 0.4em;
   border-radius: 0.3em;
-  background-color: var(--color-gray-100);
+  background-color: rgb(23 23 23);
+  color: rgb(229 231 235);
 }
 
 pre code {
@@ -66,26 +67,12 @@ pre code {
 }
 
 pre code > span .sh__token--identifier {
-  color: white !important;
+  color: rgb(229 231 235) !important;
 }
 
 code:not(pre code) span {
   font-weight: 500;
-  color: black !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  code {
-    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
-    font-size: 14px;
-    padding: 0.2em 0.4em;
-    border-radius: 0.3em;
-    background-color: var(--color-zinc-800);
-  }
-
-  code:not(pre code) span {
-    color: var(--color-zinc-100) !important;
-  }
+  color: rgb(229 231 235) !important;
 }
 
 pre code span {
@@ -93,7 +80,8 @@ pre code span {
 }
 
 hr {
-  color: var(--color-gray-200);
+  color: #333333;
+  border-color: #333333;
 }
 
 /* Remove Safari input shadow on mobile */
