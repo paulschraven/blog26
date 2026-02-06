@@ -37,7 +37,7 @@ const components = {
   ),
   ul: (props: ListProps) => (
     <ul
-      className="text-gray-200 list-square pl-5 space-y-1"
+      className="text-gray-200 list-square pl-5 space-y-1 marker:text-gray-200"
       {...props}
     />
   ),
@@ -50,7 +50,7 @@ const components = {
   ),
   a: ({ href, children, ...props }: AnchorProps) => {
     const className =
-      'text-gray-200 underline underline-offset-2 hover:no-underline transition-all duration-200';
+      'text-gray-200 underline decoration-gray-200 decoration-1 underline-offset-4 hover:no-underline transition-all duration-200';
     if (href?.startsWith('/')) {
       return (
         <Link href={href} className={className} {...props}>
